@@ -17,7 +17,7 @@ body{
     align-items: center;
     justify-content: space-between; 
     height:8vh ;
-    background-color: hsl(0, 0%, 0%,0.6);
+    background-color: hsl(0, 0%, 0%,0.8);
     color:white;
     border-bottom: darkmagenta solid 2px;
     font-size: 1.5em;
@@ -48,7 +48,7 @@ body{
  .navbar-bottom{
      display: flex;
      height: 8vh;
-     background-color: hsl(0, 0%, 0%,0.6);
+     background-color: hsl(0, 0%, 0%,0.8);
      color: white;
      justify-content: space-between;
      align-items: center;
@@ -97,9 +97,9 @@ width: 30vw;
         }
  
 footer{
-display:flex;
+/* display:flex; */
 height: 10vh;
-flex-direction: column;
+/* flex-direction: column; */
 background-color: hsl(0, 0%, 0%, 0.8);
 font-size: 10px;
 color: white;
@@ -109,6 +109,54 @@ align-items: center;
  }
  #logo{
     
-    width: 100px;
-    height:30px ;
+    width: 10%;
+    height:7%;
  }
+ .container-main{
+     height:73.5vh ;
+     position: relative;
+ }
+ .par1, .par2{
+   width:70%;  
+ }
+ .par3{
+    /* position: absolute; */
+    float:right;
+    background-color: hsl(0, 0%, 0%,0.8);
+    color: white;
+    width: 25%;
+    height: 40%;
+    padding-left: 1em;
+    padding-top:2em;
+    font-size:0.75em;
+   
+    
+    
+
+ }
+ .clearfix:after { 
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+ .par1{
+     
+     width:60% ;
+     height: 20%;
+     padding:10px ;
+     margin: 15px;
+
+ }
+ .par2{
+
+    width:60% ;
+    height: 20%;
+    background-color: hsl(0, 0%, 0%, 0.7);
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+    margin:15px;
+    
+}
