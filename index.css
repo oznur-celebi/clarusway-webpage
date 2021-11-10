@@ -59,9 +59,10 @@ body{
  #SubcribeButton{
     height: 2em;
     width: 5.5em;
-    background-color:rgb(231, 50, 50);
+    background-color:red;
     color: white;
  
+    border: none;
  }
  #email{
     height: 1.5em;  
@@ -97,9 +98,9 @@ width: 30vw;
         }
  
 footer{
-/* display:flex; */
+display:flex;
 height: 10vh;
-/* flex-direction: column; */
+flex-direction: column;
 background-color: hsl(0, 0%, 0%, 0.8);
 font-size: 10px;
 color: white;
@@ -109,19 +110,22 @@ align-items: center;
  }
  #logo{
     
-    width: 10%;
-    height:7%;
+    width: 10vh;
+    height:3vh;
  }
  .container-main{
+     background-color: hsl(0, 12%, 87%,0.2);
      height:73.5vh ;
-     position: relative;
+   
  }
- .par1, .par2{
-   width:70%;  
+ .about-left{
+     display:inline-block;
+     width:70%; 
  }
- .par3{
-    /* position: absolute; */
-    float:right;
+ 
+ .about-right{
+    
+    display: inline-block;
     background-color: hsl(0, 0%, 0%,0.8);
     color: white;
     width: 25%;
@@ -129,18 +133,8 @@ align-items: center;
     padding-left: 1em;
     padding-top:2em;
     font-size:0.75em;
-   
-    
-    
+   }
 
- }
- .clearfix:after { 
-    content: "";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-  }
  .par1{
      
      width:60% ;
@@ -159,4 +153,61 @@ align-items: center;
     padding: 10px;
     margin:15px;
     
+}
+.container-services{
+    margin-right: 2vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ 
+
+}
+.container-right{
+    width: 70vh;
+}
+.container-left{
+/* border: goldenrod 5px solid; */
+height: 70%;
+width: 70%;
+margin-top: 10px;
+padding-left: 5px;
+
+}
+.div-left{
+display: flex;
+flex-direction:column;
+justify-content:space-around;
+margin-bottom: 8px;
+height: 20vh;
+/* border: green solid 3px; */
+background-color: hsl(0, 12%, 87%);
+
+
+}
+.container-right{
+    width:20%;
+    height:200px ;
+    padding-top: 20px;
+
+    padding-left:20px ;
+    padding-right: 20px;
+    align-items: center;
+    background-color: hsl(0, 0%, 0%, 0.8);
+    color: white;
+    margin-top: 10px;
+    font-size: 0.6em;
+}
+.container-right input{
+    width: 100%;
+    text-align:left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.container-right button{
+    color: white;
+    background-color: hsl(0, 100%, 50%);
+    border: none;
+    width: 3vw;
+    height: 3vh;
+    margin-top:3px;
 }
